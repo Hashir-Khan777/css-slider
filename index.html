@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SLIDER </title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #313131;
+        }
+
+        h1 {
+            text-decoration: underline;
+            font-weight: 800;
+            color: white;
+            text-align: center;
+        }
+
+        .slider {
+            width: 70%;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url('img 1.jpg');
+            background-size: 100% 100%;
+            animation: slider 10s infinite;
+            box-shadow: 0px 0px 25px bisque;
+        }
+
+        @keyframes slider {
+            25% {
+                background-image: url('img 1.jpg');
+            }
+
+            50% {
+                background-image: url('img 2.jpg');
+            }
+
+            75% {
+                background-image: url('img 3.jpg');
+            }
+
+            100% {
+                background-image: url('img 4.jpg');
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> CSS ANIMATED SLIDER </h1>
+    <div class="slider">
+
+    </div>
+</body>
+
+</html>
